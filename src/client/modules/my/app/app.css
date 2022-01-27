@@ -33,6 +33,11 @@ img {
     max-width: 150px;
 }
 
-.greeting {
-    height: 75px;
+*, *::before, *::after{
+    box-sizing:border-box;
+    font-family:Roboto,Arial,Helvetica,sans-serif;
+}
+
+body{
+    margin:0;
 }

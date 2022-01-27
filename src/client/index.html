@@ -13,12 +13,39 @@
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1"
         />
-        <link rel="shortcut icon" href="./resources/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="../SLDS/styles/salesforce-lightning-design-system.css" />
+        <link rel="stylesheet" href="src\client\modules\my\app\app.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+        <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+            <use xlink:href="..\SLDS\icons\action-sprite\svg\symbols.svg#apex_60"></use>
+        </svg>
     </head>
     <body>
         
-        <div id="main"></div>
+        <div class videos="main">
+            <section class="video-section">
+                <article class= "video container">
+                    <a href="#" class = "thumbnail"> <!--use for thumbnails -->
+                        <img class "thumbnail-image" src ="http://unsplash.it/250/150?gravity=center">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="class-icon" src="http://unsplash.it/36/36?gravity=center"">  
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-channel-name">Channel Name</a>
+                            <div class="video-metadata"></div>
+                            <span>12k views</span>  <!--Seperate the views from date posted -->
+                            •
+                            <span>2 weeks ago</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
         
     </body>
 </html>
