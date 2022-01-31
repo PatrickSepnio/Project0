@@ -30,8 +30,14 @@
 }
 
 img {
-    max-width: 150px;
-}
+    max-width: 240px;
+    min-width: 120px;
+    max-height: 120px;
+    min-height: 60px;
+    height: 2vh;
+    width: 4vw;
+  }
+
 
 *, *::before, *::after{
     box-sizing:border-box;
@@ -42,12 +48,3 @@ body{
     margin:0;
 }
 
-.video-container   {
-    display: flex;
-    flex-direction: column;
-}
-
-.thumbnail{
-    position: relative;
-    display:flex; /*to properly size something */
-}
