@@ -5,8 +5,245 @@ https://github.com/WebDevSimplified/YouTube-Design-Clone/blob/master/index.html-
 
 
   <div class="videos">  <!--use to contain all the videos -->
+    <!-- video sections have a divider in between -->
+    <template if:true={renderForYou}>
     <section class="video-section">
+      <h2 class="video-section-title">
+        For you
+        <button class="video-section-title-close" onclick={switchForYou} >
+            
+        &times;</button>
+      </h2> <!--use to title each video section -->
       <article class="video-container"> 
+
+    <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+    <a href="#" class="thumbnail" data-duration="10:30">
+        <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+    </a>
+
+      <div class="video-bottom-section">
+        <a href="#">
+          <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+        </a>
+        <div class="video-details">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+          &nbsp;
+          <a href="#" class="video-channel-name">Example Channel</a>
+          <div class="video-metadata">
+            <span>1K views</span>
+            •
+            <span>1 week ago</span>
+          </div> <!--end video-metadata div -->
+        </div> <!--end video-details div -->
+       </div>  <!--end video-bottom-section div -->
+
+
+      </article> <!-- end video-container article -->
+
+    <article class="video-container"> 
+
+      <!-- use for the second video -->
+      <a href="#" class="thumbnail" data-duration="12:00">
+          <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+      </a>
+  
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+          </a>
+          <div class="video-details">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+            &nbsp;
+            <a href="#" class="video-channel-name">Example Channel</a>
+            <div class="video-metadata">
+              <span>11M views</span>
+              •
+              <span>1 week ago</span>
+            </div> <!--end video-metadata div -->
+          </div> <!--end video-details div -->
+         </div>  <!--end video-bottom-section div -->
+  
+  
+    </article> <!-- end video-container article -->
+
+
+    <article class="video-container"> 
+
+        <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+        <a href="#" class="thumbnail" data-duration="10:30">
+            <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+        </a>
+    
+          <div class="video-bottom-section">
+            <a href="#">
+              <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+            </a>
+            <div class="video-details">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+              &nbsp;
+              <a href="#" class="video-channel-name">Example Channel</a>
+              <div class="video-metadata">
+                <span>1K views</span>
+                •
+                <span>1 week ago</span>
+              </div> <!--end video-metadata div -->
+            </div> <!--end video-details div -->
+           </div>  <!--end video-bottom-section div -->
+    
+    
+    </article> <!-- end video-container article -->
+    
+    <article class="video-container"> 
+    
+          <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+          <a href="#" class="thumbnail" data-duration="10:30">
+              <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+          </a>
+      
+            <div class="video-bottom-section">
+              <a href="#">
+                <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+              </a>
+              <div class="video-details">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+                &nbsp;
+                <a href="#" class="video-channel-name">Example Channel</a>
+                <div class="video-metadata">
+                  <span>1K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div> <!--end video-metadata div -->
+              </div> <!--end video-details div -->
+             </div>  <!--end video-bottom-section div -->
+      
+      
+    </article> <!-- end video-container article -->
+
+    </section> <!-- end video-section article -->
+    </template>
+
+    <template if:true={renderNews}>
+    <section class="video-section">
+      <h2 class="video-section-title">
+        News
+       <button class="video-section-title-close" onclick={switchNews}>&times;</button>
+      </h2> <!--use to title each video section -->
+      <article class="video-container"> 
+
+    <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+    <a href="#" class="thumbnail" data-duration="10:30">
+        <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+    </a>
+
+      <div class="video-bottom-section">
+        <a href="#">
+          <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+        </a>
+        <div class="video-details">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+          &nbsp;
+          <a href="#" class="video-channel-name">Example Channel</a>
+          <div class="video-metadata">
+            <span>1K views</span>
+            •
+            <span>1 week ago</span>
+          </div> <!--end video-metadata div -->
+        </div> <!--end video-details div -->
+       </div>  <!--end video-bottom-section div -->
+
+
+      </article> <!-- end video-container article -->
+
+    <article class="video-container"> 
+
+      <!-- use for the second video -->
+      <a href="#" class="thumbnail" data-duration="12:00">
+          <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+      </a>
+  
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+          </a>
+          <div class="video-details">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+            &nbsp;
+            <a href="#" class="video-channel-name">Example Channel</a>
+            <div class="video-metadata">
+              <span>11M views</span>
+              •
+              <span>1 week ago</span>
+            </div> <!--end video-metadata div -->
+          </div> <!--end video-details div -->
+         </div>  <!--end video-bottom-section div -->
+  
+  
+    </article> <!-- end video-container article -->
+
+
+    <article class="video-container"> 
+
+        <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+        <a href="#" class="thumbnail" data-duration="10:30">
+            <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+        </a>
+    
+          <div class="video-bottom-section">
+            <a href="#">
+              <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+            </a>
+            <div class="video-details">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+              &nbsp;
+              <a href="#" class="video-channel-name">Example Channel</a>
+              <div class="video-metadata">
+                <span>1K views</span>
+                •
+                <span>1 week ago</span>
+              </div> <!--end video-metadata div -->
+            </div> <!--end video-details div -->
+           </div>  <!--end video-bottom-section div -->
+    
+    
+    </article> <!-- end video-container article -->
+    
+    <article class="video-container"> 
+    
+          <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+          <a href="#" class="thumbnail" data-duration="10:30">
+              <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+          </a>
+      
+            <div class="video-bottom-section">
+              <a href="#">
+                <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+              </a>
+              <div class="video-details">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+                &nbsp;
+                <a href="#" class="video-channel-name">Example Channel</a>
+                <div class="video-metadata">
+                  <span>1K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div> <!--end video-metadata div -->
+              </div> <!--end video-details div -->
+             </div>  <!--end video-bottom-section div -->
+      
+      
+    </article> <!-- end video-container article -->
+
+    </section> <!-- end video-section article -->
+    </template> 
+
+
+    <template if:true={renderSports}>
+    <section class="video-section">
+      <h2 class="video-section-title">
+        Sports
+        <button class="video-section-title-close" onclick={switchSports}>&times;</button>
+      </h2> <!--use to title each video section -->
+    <article class="video-container"> 
 
     <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
     <a href="#" class="thumbnail" data-duration="10:30">
@@ -56,9 +293,64 @@ https://github.com/WebDevSimplified/YouTube-Design-Clone/blob/master/index.html-
          </div>  <!--end video-bottom-section div -->
   
   
-      </article> <!-- end video-container article -->
+    </article> <!-- end video-container article -->
 
-    </section> <!-- end video-section article -->
+    <article class="video-container"> 
+
+        <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+        <a href="#" class="thumbnail" data-duration="10:30">
+            <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+        </a>
+    
+          <div class="video-bottom-section">
+            <a href="#">
+              <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+            </a>
+            <div class="video-details">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+              &nbsp;
+              <a href="#" class="video-channel-name">Example Channel</a>
+              <div class="video-metadata">
+                <span>1K views</span>
+                •
+                <span>1 week ago</span>
+              </div> <!--end video-metadata div -->
+            </div> <!--end video-details div -->
+           </div>  <!--end video-bottom-section div -->
+    
+    
+    </article> <!-- end video-container article -->
+    
+    <article class="video-container"> 
+    
+          <!-- <a href="#" class="thumbnail" data-duration="12:00"> -->
+          <a href="#" class="thumbnail" data-duration="10:30">
+              <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+          </a>
+      
+            <div class="video-bottom-section">
+              <a href="#">
+                <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center" />
+              </a>
+              <div class="video-details">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-title">Video 1</a>
+                &nbsp;
+                <a href="#" class="video-channel-name">Example Channel</a>
+                <div class="video-metadata">
+                  <span>1K views</span>
+                  •
+                  <span>1 week ago</span>
+                </div> <!--end video-metadata div -->
+              </div> <!--end video-details div -->
+             </div>  <!--end video-bottom-section div -->
+      
+      
+    </article> <!-- end video-container article -->
+
+
+    </section> <!-- end video-section article -->   
+  </template> 
+
   </div>  <!-- end videos div -->
 
 </template>
